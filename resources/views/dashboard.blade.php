@@ -5,7 +5,7 @@
     <div class="col-md-3 stretch-card grid-margin" style="height: 150px">
         <div class="card bg-gradient-danger card-img-holder text-white">
             <div class="card-body">
-                <img src="/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                <img src="/purple/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                 <h4 class="font-weight-normal mb-3">Total Barang <i class="mdi mdi-chart-line mdi-24px float-right"></i>
                 </h4>
                 <h2 class="mb-5">$ 15,0000</h2>
@@ -15,7 +15,7 @@
     <div class="col-md-3 stretch-card grid-margin" style="height: 150px">
         <div class="card bg-gradient-secondary card-img-holder text-white">
             <div class="card-body">
-                <img src="/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                <img src="/purple/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                 <h4 class="font-weight-normal mb-3">Peminjam <i
                         class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                 </h4>
@@ -26,7 +26,7 @@
     <div class="col-md-3 stretch-card grid-margin" style="height: 150px">
         <div class="card bg-gradient-info card-img-holder text-white">
             <div class="card-body">
-                <img src="/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                <img src="/purple/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                 <h4 class="font-weight-normal mb-3">Pengembalian <i
                         class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                 </h4>
@@ -37,7 +37,7 @@
     <div class="col-md-3 stretch-card grid-margin" style="height: 150px">
         <div class="card bg-gradient-success card-img-holder text-white">
             <div class="card-body">
-                <img src="/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                <img src="/purple/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
                 <h4 class="font-weight-normal mb-3">Operator <i class="mdi mdi-diamond mdi-24px float-right"></i>
                 </h4>
                 <h2 class="mb-5">95,5741</h2>
@@ -66,8 +66,7 @@
                 <ul class="list-unstyled list-unstyled-border">
                     {{--@foreach ($namapeminjam as $item)--}}
                     <li class="media">
-                        <img class="mr-3 rounded-circle" width="50"
-                            src="{{ asset('template') }}/assets/img/avatar/avatar-1.png" alt="avatar">
+                        
                         <div class="media-body">
                             <div class="float-right text-primary">{{--{{ $item -> created_at -> diffForHumans() }}--}}
                             </div>
