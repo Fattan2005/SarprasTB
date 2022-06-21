@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layout.main');
+// Login
+Route::get('/',[AuthController::class,'index']);
+Route::post('/login',[AuthController::class,'login'])->name('login');
+Route::get('/logout',[AuthController::class,'logout'])->name('logout');
+
+// Auth
+Route::group(['middleware' => ['auth']], function () {
+    Route::group(['middleware' => 'cek_login:admin'], function () {
+        // Dashboard
+        Route::get('/admin',[DashboardController::class,'index']);
+    });
 });

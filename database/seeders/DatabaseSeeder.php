@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,11 +15,25 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        {
+            $user = [
+                [
+                    'name' => 'Admin1',
+                    'email' => 'admin1@sarpras.com',
+                    'level' => 'admin',
+                    'password' => bcrypt('admin1'),
+                ],
+                [
+                    'name' => 'Admin2',
+                    'email' => 'admin2@sarpras.com',
+                    'level' => 'admin',
+                    'password' => bcrypt('admin2'),
+                ],
+            ];
+    
+            foreach ($user as $key => $value) {
+                User::create($value);
+            }
+        }
     }
 }
