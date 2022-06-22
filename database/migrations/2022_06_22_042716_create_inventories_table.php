@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('barangs', function (Blueprint $table) {
+        Schema::create('inventories', function (Blueprint $table) {
             $table->id();
-            $table->string('kode_barang', 5);
-            $table->string('nama_barang');
-            $table->enum('jenis_barang', ['laptop', 'kunci', 'dll']);
-            $table->string('foto');
-            $table->string('spesifikasi');
+            $table->foreignId('barang_id');
+            $table->integer('stok');
+            $table->integer('jumlah_tersedia');
+            $table->integer('jumlah_rusak');
+            $table->integer('jumlah_terpinjam');
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('barangs');
+        Schema::dropIfExists('inventories');
     }
 };
