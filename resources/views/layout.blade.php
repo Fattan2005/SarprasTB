@@ -7,17 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Purple Admin</title>
         <!-- plugins:css -->
-        <link rel="stylesheet" href="{{ asset('purple/assets/vendors/mdi/css/materialdesignicons.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('purple/assets/vendors/css/vendor.bundle.base.css') }}">
+        <link rel="stylesheet" href="/purple/assets/vendors/mdi/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="/purple/assets/vendors/css/vendor.bundle.base.css">
         <!-- endinject -->
         <!-- Plugin css for this page -->
         <!-- End plugin css for this page -->
         <!-- inject:css -->
         <!-- endinject -->
         <!-- Layout styles -->
-        <link rel="stylesheet" href="{{ asset('purple/assets/css/style.css') }}">
+        <link rel="stylesheet" href="/purple/assets/css/style.css">
         <!-- End layout styles -->
-        <link rel="shortcut icon" href="{{ asset('purple/assets/images/favicon.ico') }}" />
+        <link rel="shortcut icon" href="/purple/assets/images/favicon.ico" />
     </head>
 
     <body>
@@ -25,9 +25,9 @@
             <!-- partial:partials/_navbar.html -->
             <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                    <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/logo.svg"
+                    <a class="navbar-brand brand-logo" href="index.html"><img src="/purple/assets/images/logo.svg"
                             alt="logo" /></a>
-                    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg"
+                    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="/purple/assets/images/logo-mini.svg"
                             alt="logo" /></a>
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-stretch">
@@ -51,7 +51,7 @@
                             <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 <div class="nav-profile-img">
-                                    <img src="/assets/images/faces/face1.jpg" alt="image">
+                                    <img src="/purple/assets/images/faces/face1.jpg" alt="image">
                                     <span class="availability-status online"></span>
                                 </div>
                                 <div class="nav-profile-text">
@@ -83,7 +83,7 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item preview-item">
                                     <div class="preview-thumbnail">
-                                        <img src="assets/images/faces/face4.jpg" alt="image" class="profile-pic">
+                                        <img src="/purple/assets/images/faces/face4.jpg" alt="image" class="profile-pic">
                                     </div>
                                     <div
                                         class="preview-item-content d-flex align-items-start flex-column justify-content-center">
@@ -95,7 +95,7 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item preview-item">
                                     <div class="preview-thumbnail">
-                                        <img src="assets/images/faces/face2.jpg" alt="image" class="profile-pic">
+                                        <img src="/purple/assets/images/faces/face2.jpg" alt="image" class="profile-pic">
                                     </div>
                                     <div
                                         class="preview-item-content d-flex align-items-start flex-column justify-content-center">
@@ -107,7 +107,7 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item preview-item">
                                     <div class="preview-thumbnail">
-                                        <img src="assets/images/faces/face3.jpg" alt="image" class="profile-pic">
+                                        <img src="/purple/assets/images/faces/face3.jpg" alt="image" class="profile-pic">
                                     </div>
                                     <div
                                         class="preview-item-content d-flex align-items-start flex-column justify-content-center">
@@ -198,7 +198,7 @@
                         <li class="nav-item nav-profile">
                             <a href="#" class="nav-link">
                                 <div class="nav-profile-image">
-                                    <img src="/assets/images/faces/face1.jpg" alt="profile">
+                                    <img src="/purple/assets/images/faces/face1.jpg" alt="profile">
                                     <span class="login-status online"></span>
                                     <!--change to offline or busy as needed-->
                                 </div>
@@ -274,20 +274,20 @@
         </div>
         <!-- container-scroller -->
         <!-- plugins:js -->
-        <script src="{{ asset('purple/assets/vendors/js/vendor.bundle.base.js') }}"></script>
+        <script src="/purple/assets/vendors/js/vendor.bundle.base.js"></script>
         <!-- endinject -->
         <!-- Plugin js for this page -->
-        <script src="{{ asset('purple/assets/vendors/chart.js/Chart.min.js') }}"></script>
-        <script src="{{ asset('purple/assets/js/jquery.cookie.js') }}" type="text/javascript"></script>
+        <script src="/purple/assets/vendors/chart.js/Chart.min.js"></script>
+        <script src="/purple/assets/js/jquery.cookie.js" type="text/javascript"></script>
         <!-- End plugin js for this page -->
         <!-- inject:js -->
-        <script src="{{ asset('purple/assets/js/off-canvas.js') }}"></script>
-        <script src="{{ asset('purple/assets/js/hoverable-collapse.js') }}"></script>
-        <script src="{{ asset('purple/assets/js/misc.js') }}"></script>
+        <script src="/purple/assets/js/off-canvas.js"></script>
+        <script src="/purple/assets/js/hoverable-collapse.js"></script>
+        <script src="/purple/assets/js/misc.js"></script>
         <!-- endinject -->
         <!-- Custom js for this page -->
-        <script src="{{ asset('purple/assets/js/dashboard.js') }}"></script>
-        <script src="{{ asset('purple/assets/js/todolist.js') }}"></script>
+        <script src="/purple/assets/js/dashboard.js"></script>
+        <script src="/purple/assets/js/todolist.js"></script>
         <!-- End custom js for this page -->
     </body>
 
