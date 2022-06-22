@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('barang', function (Blueprint $table) {
             $table->id();
-            $table->string('kode_barang'. [5]);
+            $table->string('kode_barang', 5);
             $table->string('nama_barang');
-            $table->enum('jenis_barang', ['laptop', 'kunci', 'dll']);
-            $table->string('foto');
+            $table->enum('jenis_barang', ['komputer', 'perlengkapan komputer']);
+            $table->string('foto_barang');
             $table->string('spesifikasi');
             $table->timestamps();
         });
