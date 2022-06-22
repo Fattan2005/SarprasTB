@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Peminjaman extends Model
+class Inventory extends Model
 {
-    use HasFactory;
+    protected $table = "inventory";
     protected $guarded = [];
 
     public function kodebarang(){
