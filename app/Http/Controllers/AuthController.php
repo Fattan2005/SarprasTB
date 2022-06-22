@@ -24,12 +24,12 @@ class AuthController extends Controller
             if (Auth::attempt($kredensil)) {
                 $user = Auth::user();
                 if ($user->level == 'admin') {
-                    return redirect()->intended('admin');
+                    return redirect()->intended('dashboard');
                 }
                 return redirect()->intended('/');
             }
 
-            return redirect()->intended('/login')->withInput()->withErrors(['login_gagal' => 'These credentials do not match our records.']);;
+            return redirect()->intended('/')->withInput()->withErrors(['login_gagal' => 'These credentials do not match our records.']);;
     }
 
     public function logout(Request $request)

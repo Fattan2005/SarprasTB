@@ -16,14 +16,14 @@ use App\Http\Controllers\DashboardController;
 */
 
 // Login
-Route::get('/',[AuthController::class,'index']);
-Route::post('/login',[AuthController::class,'login'])->name('login');
+Route::get('/',[AuthController::class,'index'])->name('login');
+Route::post('/login',[AuthController::class,'login']);
 Route::get('/logout',[AuthController::class,'logout'])->name('logout');
 
 // Auth
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => 'cek_login:admin'], function () {
         // Dashboard
-        Route::get('/admin',[DashboardController::class,'index']);
+        Route::get('/dashboard',[DashboardController::class,'index']);
     });
 });
