@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('kode_barang', 5);
             $table->string('nama_barang');
-            $table->enum('jenis_barang', ['Elektronik', 'Kunci']);
-            $table->string('foto');
+            $table->enum('jenis_barang', ['komputer', 'perlengkapan komputer']);
+            $table->string('foto_barang');
             $table->string('spesifikasi');
             $table->timestamps();
         });

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BarangController;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -27,3 +28,5 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('/dashboard',[DashboardController::class,'index']);
     });
 });
+
+Route::resource('barang',BarangController::class);
